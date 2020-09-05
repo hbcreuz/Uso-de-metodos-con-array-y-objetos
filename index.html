@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Médico Nuñoa</title>
+
+</head>
+
+<body>
+    <script>
+        document.write('<h1>Estadísticas Centro Médico Ñuñoa</h1>');
+
+
+        document.write('<h3>RADIOLOGÍA</h3>');
+        var radiologia = [{
+            hora: "11:00",
+            especialista: "IGNACIO SCHULZ",
+            paciente: "FRANCISCA ROJAS",
+            rut: "9878782-1",
+            prevision: "FONASA"
+        }, {
+            hora: "11:30",
+            especialista: "FEDERICO SUBERCASEAUX",
+            paciente: "PAMELA ESTRADA",
+            rut: "15345241-3",
+            prevision: "ISAPRE"
+        }, {
+            hora: "15:00",
+            especialista: "FERNANDO WURTHZ",
+            paciente: "ARMANDO LUNA",
+            rut: "16445345-9",
+            prevision: "ISAPRE"
+        }, {
+            hora: "15:30",
+            especialista: "ANA MARIA GODOY",
+            paciente: "MANUEL GODOY",
+            rut: "17666419-0",
+            prevision: "FONASA"
+        }, {
+            hora: "16:00",
+            especialista: "PATRICIA SUAZO",
+            paciente: "RAMON ULLOA",
+            rut: "14989389-K",
+            prevision: "FONASA"
+        }, ];
+
+        document.write("Paciente de Radiologia 1:" + radiologia[0].paciente);
+        document.write("<br>")
+        document.write("Paciente de Radiologia 2:" + radiologia[1].paciente);
+        document.write("<br>")
+        document.write("Paciente de Radiologia 3 :" + radiologia[2].paciente);
+        document.write("<br>")
+        document.write("Paciente de Radiologia 4 :" + radiologia[3].paciente);
+        document.write("<br>")
+        document.write("Paciente de Radiologia 5 :" + radiologia[4].paciente);
+        document.write("<br>")
+        document.write("<br>")
+        document.write("Cantidad de consultas:" + radiologia.length);
+        document.write("<br>")
+        document.write("<br>")
+
+
+        document.write(`Primer paciente:${radiologia[0].paciente} - ${radiologia[0].rut} - ${radiologia[0].prevision}`);
+
+        document.write(`||| Último paciente:${radiologia[4].paciente} - ${radiologia[4].rut} - ${radiologia[4].prevision}`);
+
+
+
+
+
+        document.write('<h3>RADIOLOGÍA 2</h3>');
+        var radiologia = [{
+            hora: "11:00",
+            especialista: "IGNACIO SCHULZ",
+            paciente: "FRANCISCA ROJAS",
+            rut: "9878782-1",
+            prevision: "FONASA"
+        }, {
+            hora: "11:30",
+            especialista: "FEDERICO SUBERCASEAUX",
+            paciente: "PAMELA ESTRADA",
+            rut: "15345241-3",
+            prevision: "ISAPRE"
+        }, {
+            hora: "15:00",
+            especialista: "FERNANDO WURTHZ",
+            paciente: "ARMANDO LUNA",
+            rut: "16445345-9",
+            prevision: "ISAPRE"
+        }, {
+            hora: "15:30",
+            especialista: "ANA MARIA GODOY",
+            paciente: "MANUEL GODOY",
+            rut: "17666419-0",
+            prevision: "FONASA"
+        }, {
+            hora: "16:00",
+            especialista: "PATRICIA SUAZO",
+            paciente: "RAMON ULLOA",
+            rut: "14989389-K",
+            prevision: "FONASA"
+        }, ];
+
+
+        radiologia.shift();
+        console.log(radiologia);
+
+
+        radiologia.pop();
+        console.log(radiologia);
+
+
+
+        document.write("Paciente de Radiologia 1:" + radiologia[0].paciente);
+        document.write("<br>")
+        document.write("Paciente de Radiologia 2:" + radiologia[1].paciente);
+        document.write("<br>")
+        document.write("Paciente de Radiologia 3 :" + radiologia[2].paciente);
+        document.write("<br>")
+        document.write("<br>")
+        document.write("Cantidad de consultas:" + radiologia.length);
+        document.write("<br>")
+        document.write("<br>")
+
+
+        document.write(`Primer paciente:${radiologia[0].paciente} - ${radiologia[0].rut} - ${radiologia[0].prevision}`);
+
+        document.write(`||| Último paciente:${radiologia[2].paciente} - ${radiologia[2].rut} - ${radiologia[2].prevision}`);
+
+
+
+
+
+
+
+
+
+
+        document.write('<h3>TRAUMATOLOGÍA</h3>');
+        var traumatología = [{
+                hora: "08:00",
+                especialista: "MARIA PAZ ALTUZARRA",
+                paciente: "PAULA SANCHEZ",
+                rut: "15554774-5",
+                prevision: "FONASA"
+            }, {
+                hora: "10:00",
+                especialista: "RAUL ARAYA",
+                paciente: "ANGÉLICA NAVAS",
+                rut: "15444147-9",
+                prevision: "ISAPRE"
+            }, {
+                hora: "10:30",
+                especialista: "MARIA ARRIAGADA",
+                paciente: "ANA KLAPP",
+                rut: "17879423-9",
+                prevision: "ISAPRE"
+            }, {
+                hora: "11:00",
+                especialista: "ALEJANDRO BADILLA",
+                paciente: "FELIPE MARDONES",
+                rut: "1547423-6",
+                prevision: "ISAPRE"
+            }, {
+                hora: "11:30",
+                especialista: "CECILIA BUDNIK",
+                paciente: "DIEGO MARRE",
+                rut: "16554741-K",
+                prevision: "FONASA"
+            }, {
+                hora: "12:00",
+                especialista: "ARTURO CAVAGNARO",
+                paciente: "CECILIA MENDEZ",
+                rut: "9747535-8",
+                prevision: "ISAPRE"
+            }, {
+                hora: "12:30",
+                especialista: "ANDRES KANACRI",
+                paciente: "MARCIAL SUAZO",
+                rut: "11254785-5K",
+                prevision: "ISAPRE"
+            },
+
+        ];
+
+        traumatología.push({
+            hora: '9:00',
+            especialista: 'RENÉ POBLETE',
+            paciente: 'ANA GELLONA',
+            rut: '13123329-7',
+            prevision: 'ISAPRE'
+        }, {
+            hora: '9:30',
+            especialista: 'MARIA SOLAR ',
+            paciente: 'RAMIRO ANDRADE ',
+            rut: '12221451-K',
+            prevision: 'FONASA'
+        }, {
+            hora: '10:00',
+            especialista: 'RAUL LOYOLA',
+            paciente: 'CARMEN ISLA',
+            rut: '10112348-3',
+            prevision: 'ISAPRE'
+        }, {
+            hora: '10:30',
+            especialista: 'ANTONIO LARENAS ',
+            paciente: 'PABLO LOAYZA',
+            rut: '13453234-1',
+            prevision: 'ISAPRE'
+        }, {
+            hora: '12:00',
+            especialista: 'MATIAS ARAVENA ',
+            paciente: 'SUSANA POBLETE ',
+            rut: '14345656-6 ',
+            prevision: 'FONASA'
+        });
+
+
+
+
+        document.write("Paciente de traumatología 1 :" + traumatología[0].paciente);
+        document.write("<br>")
+        document.write("Paciente de traumatología 2 :" + traumatología[1].paciente);
+        document.write("<br>")
+        document.write("Paciente de traumatología 3 :" + traumatología[2].paciente);
+        document.write("<br>")
+        document.write("Paciente de traumatología 4 :" + traumatología[3].paciente);
+        document.write("<br>")
+        document.write("Paciente de traumatología 5 :" + traumatología[4].paciente);
+        document.write("<br>")
+        document.write("Paciente de traumatología 6 :" + traumatología[5].paciente);
+        document.write("<br>")
+        document.write("Paciente de traumatología 7 :" + traumatología[6].paciente);
+        document.write("<br>")
+        document.write("Paciente de traumatología 8 :" + traumatología[7].paciente);
+        document.write("<br>")
+        document.write("Paciente de traumatología 9 :" + traumatología[8].paciente);
+        document.write("<br>")
+        document.write("Paciente de traumatología 10 :" + traumatología[9].paciente);
+        document.write("<br>")
+        document.write("Paciente de traumatología 11 :" + traumatología[10].paciente);
+        document.write("<br>")
+        document.write("Paciente de traumatología 12 :" + traumatología[11].paciente);
+        document.write("<br>")
+        document.write("<br>")
+        document.write("Cantidad de consultas:" + traumatología.length);
+        document.write("<br>")
+        document.write("<br>")
+
+        document.write(`Primer paciente:${traumatología[0].paciente} - ${traumatología[0].rut} - ${traumatología[0].prevision}`);
+
+        document.write(`||| Último paciente:${traumatología[11].paciente} - ${traumatología[11].rut} - ${traumatología[11].prevision}`);
+
+
+
+
+        document.write('<h3>DENTAL</h3>');
+        var dental = [{
+                hora: "08:30",
+                especialista: "ANDREA ZUÑIGA",
+                paciente: "MARCELA RETAMAL",
+                rut: "11123425-6",
+                prevision: "ISAPRE"
+            }, {
+                hora: "11:00",
+                especialista: "MARIA PIA ZAÑARTU",
+                paciente: "ANGEL MUÑOZ",
+                rut: "9878789-2",
+                prevision: "ISAPRE"
+            }, {
+                hora: "11:30",
+                especialista: "SCARLETT WITTING",
+                paciente: "MARIO KAST",
+                rut: "7998789-5",
+                prevision: "FONASA"
+            }, {
+                hora: "13:00",
+                especialista: "FRANCISCO VON TEUBER",
+                paciente: "KARIN FERNANDEZ",
+                rut: "18887662-K",
+                prevision: "FONASA"
+            }, {
+                hora: "13:30",
+                especialista: "EDUARDO VIÑUELA",
+                paciente: "HUGO SANCHEZ",
+                rut: "17665461-4",
+                prevision: "FONASA"
+            }, {
+                hora: "14:00",
+                especialista: "RAQUEL VILLASECA",
+                paciente: "ANA SEPULVEDA",
+                rut: "14441281-0",
+                prevision: "ISAPRE"
+            },
+
+        ];
+
+        document.write("Paciente de dental 1 :" + dental[0].paciente);
+        document.write("<br>")
+        document.write("Paciente de dental 2:" + dental[1].paciente);
+        document.write("<br>")
+        document.write("Paciente de dental 3 :" + dental[2].paciente);
+        document.write("<br>")
+        document.write("Paciente de dental 4 :" + dental[3].paciente);
+        document.write("<br>")
+        document.write("Paciente de dental 5 :" + dental[4].paciente);
+        document.write("<br>")
+        document.write("Paciente de dental 6 :" + dental[5].paciente);
+        document.write("<br>")
+        document.write("<br>")
+        document.write("Cantidad de consultas:" + dental.length);
+        document.write("<br>")
+        document.write("<br>")
+
+        document.write(`Primer paciente:${dental[0].paciente} - ${dental[0].rut} - ${dental[0].prevision}`);
+
+        document.write(`||| Último paciente:${dental[5].paciente} - ${dental[5].rut} - ${dental[5].prevision}`);
+
+
+
+
+        document.write('<h3>DENTAL 2 </h3>');
+
+
+        document.write(` ${dental[0].hora} - ${dental[0].especialista} - ${dental[0].paciente} - ${dental[0].rut} - ${dental[0].prevision}`);
+        document.write("<br>")
+        document.write(` ${dental[1].hora} - ${dental[1].especialista} - ${dental[1].paciente} - ${dental[1].rut} - ${dental[1].prevision}`);
+        document.write("<br>")
+        document.write(` ${dental[2].hora} - ${dental[2].especialista} - ${dental[2].paciente} - ${dental[2].rut} - ${dental[2].prevision}`);
+        document.write("<br>")
+        document.write(` ${dental[3].hora} - ${dental[3].especialista} - ${dental[3].paciente} - ${dental[3].rut} - ${dental[3].prevision}`);
+        document.write("<br>")
+        document.write(` ${dental[4].hora} - ${dental[4].especialista} - ${dental[4].paciente} - ${dental[4].rut} - ${dental[4].prevision}`);
+        document.write("<br>")
+        document.write(` ${dental[5].hora} - ${dental[5].especialista} - ${dental[5].paciente} - ${dental[5].rut} - ${dental[5].prevision}`);
+
+
+        document.write('<h3>LISTADO TOTAL DE TODOS LOS PACIENTES </h3>');
+
+
+        var PACIENTES = [{
+                hora: "11:00",
+                especialista: "IGNACIO SCHULZ",
+                paciente: "FRANCISCA ROJAS",
+                rut: "9878782-1",
+                prevision: "FONASA"
+            }, {
+                hora: "11:30",
+                especialista: "FEDERICO SUBERCASEAUX",
+                paciente: "PAMELA ESTRADA",
+                rut: "15345241-3",
+                prevision: "ISAPRE"
+            }, {
+                hora: "15:00",
+                especialista: "FERNANDO WURTHZ",
+                paciente: "ARMANDO LUNA",
+                rut: "16445345-9",
+                prevision: "ISAPRE"
+            }, {
+                hora: "15:30",
+                especialista: "ANA MARIA GODOY",
+                paciente: "MANUEL GODOY",
+                rut: "17666419-0",
+                prevision: "FONASA"
+            }, {
+                hora: "16:00",
+                especialista: "PATRICIA SUAZO",
+                paciente: "RAMON ULLOA",
+                rut: "14989389-K",
+                prevision: "FONASA"
+            }, {
+                hora: "08:00",
+                especialista: "MARIA PAZ ALTUZARRA",
+                paciente: "PAULA SANCHEZ",
+                rut: "15554774-5",
+                prevision: "FONASA"
+            }, {
+                hora: "10:00",
+                especialista: "RAUL ARAYA",
+                paciente: "ANGÉLICA NAVAS",
+                rut: "15444147-9",
+                prevision: "ISAPRE"
+            }, {
+                hora: "10:30",
+                especialista: "MARIA ARRIAGADA",
+                paciente: "ANA KLAPP",
+                rut: "17879423-9",
+                prevision: "ISAPRE"
+            }, {
+                hora: "11:00",
+                especialista: "ALEJANDRO BADILLA",
+                paciente: "FELIPE MARDONES",
+                rut: "1547423-6",
+                prevision: "ISAPRE"
+            }, {
+                hora: "11:30",
+                especialista: "CECILIA BUDNIK",
+                paciente: "DIEGO MARRE",
+                rut: "16554741-K",
+                prevision: "FONASA"
+            }, {
+                hora: "12:00",
+                especialista: "ARTURO CAVAGNARO",
+                paciente: "CECILIA MENDEZ",
+                rut: "9747535-8",
+                prevision: "ISAPRE"
+            }, {
+                hora: "12:30",
+                especialista: "ANDRES KANACRI",
+                paciente: "MARCIAL SUAZO",
+                rut: "11254785-5K",
+                prevision: "ISAPRE"
+            }, {
+                hora: '9:00',
+                especialista: 'RENÉ POBLETE',
+                paciente: 'RAMIRO ANDRADE ',
+                rut: '12221451-K',
+                prevision: 'FONASA'
+            }, {
+                hora: '10:00',
+                especialista: 'RAUL LOYOLA',
+                paciente: 'CARMEN ISLA',
+                rut: '10112348-3',
+                prevision: 'ISAPRE'
+            }, {
+                hora: '10:30',
+                especialista: 'ANTONIO LARENAS ',
+                paciente: 'PABLO LOAYZA',
+                rut: '13453234-1',
+                prevision: 'ISAPRE'
+            }, {
+                hora: '12:00',
+                especialista: 'MATIAS ARAVENA ',
+                paciente: 'SUSANA POBLETE ',
+                rut: '14345656-6 ',
+                prevision: 'FONASA'
+            }, {
+                hora: "08:30",
+                especialista: "ANDREA ZUÑIGA",
+                paciente: "MARCELA RETAMAL",
+                rut: "11123425-6",
+                prevision: "ISAPRE"
+            }, {
+                hora: "11:00",
+                especialista: "MARIA PIA ZAÑARTU",
+                paciente: "ANGEL MUÑOZ",
+                rut: "9878789-2",
+                prevision: "ISAPRE"
+            }, {
+                hora: "11:30",
+                especialista: "SCARLETT WITTING",
+                paciente: "MARIO KAST",
+                rut: "7998789-5",
+                prevision: "FONASA"
+            }, {
+                hora: "13:00",
+                especialista: "FRANCISCO VON TEUBER",
+                paciente: "KARIN FERNANDEZ",
+                rut: "18887662-K",
+                prevision: "FONASA"
+            }, {
+                hora: "13:30",
+                especialista: "EDUARDO VIÑUELA",
+                paciente: "HUGO SANCHEZ",
+                rut: "17665461-4",
+                prevision: "FONASA"
+            }, {
+                hora: "14:00",
+                especialista: "RAQUEL VILLASECA",
+                paciente: "ANA SEPULVEDA",
+                rut: "14441281-0",
+                prevision: "ISAPRE"
+            },
+
+        ];
+
+
+        PACIENTES.forEach(function(PACIENTES) {
+            console.log(PACIENTES.paciente);
+            document.write(PACIENTES.paciente + "<br><br>")
+        });
+
+
+        document.write('<h3>LISTADO DENTAL CAMBIO PREVISION</h3>');
+
+
+        dental.forEach(function(dental) {
+            console.log(dental.prevision);
+            if (dental.prevision == "FONASA") {
+                dental.prevision = "ISAPRE";
+            } else {
+                dental.prevision = "FONASA";
+            }
+
+        })
+
+        dental.forEach(function(dental) {
+            console.log(dental.paciente);
+            document.write(dental.paciente + "-" + dental.prevision + "<br><br>")
+        });
+    </script>
+</body>
+
+</html>
